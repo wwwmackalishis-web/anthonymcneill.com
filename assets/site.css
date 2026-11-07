@@ -488,6 +488,12 @@ main { flex: 1 0 auto; }
   .compare-table td:last-child::before { color: var(--ox); }
 }
 
+.care-web { margin-top: clamp(2.5rem, 5vw, 4rem); padding: clamp(1.5rem, 3vw, 2.5rem); border: 2px solid var(--tape); max-width: 52rem; }
+.care-web h3 { font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.4rem); color: var(--tape); }
+.care-price { font-family: var(--display); font-weight: 900; font-size: clamp(2rem, 1.5rem + 2vw, 3.2rem); margin-block: 0.4rem 0.8rem; color: var(--marble-hi); }
+.care-price span { font-family: var(--text); font-size: 1.05rem; font-weight: 700; display: inline-block; white-space: nowrap; }
+.tickets-3 .price + ul { margin-top: 0.8rem; }
+
 /* Motion: only when the visitor has not asked for less */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
